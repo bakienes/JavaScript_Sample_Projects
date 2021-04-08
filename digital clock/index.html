@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color:black;
+            }
+            .boxContainer{
+                position:absolute;
+                left:50%;
+                top:50%;
+                transform: translateX(-50%) translateY(calc(-50% - 150px));
+                
+            }
+            .box{
+                width:150px;
+                display:inline-block;
+                height:150px;
+                background-color:#f2f2f2;
+                border:2px solid white;
+                color:black;
+                font-size:50px;
+                line-height:150px;
+                text-align: center;
+            }
+            .date{
+                color:white;
+                font-size:30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="boxContainer">
+            <div class="box hour"></div>
+            <div class="box minute"></div>
+            <div class="box second"></div>
+            <div class="date">
+
+            </div>
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>
